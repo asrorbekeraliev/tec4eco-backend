@@ -1,0 +1,27 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tech4eco
+    username: tech4eco
+    password: 123
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL92Dialect
+    hibernate:
+      ddl-auto: update    # har safar restart bo'lganda update bo'ladi
+  servlet:
+    multipart:
+      max-file-size: 1GB
+      max-request-size: 1GB
+
+
+upload:
+  server:
+    folder: D:/rasmlar
+
+jwt:
+  token:
+    secret: hellojwttoken        # secret key
+    validity: 86400000           # yashash muddati. millisekundlarda beriladi
