@@ -20,7 +20,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
                 .allowedMethods("*")
                 .allowedHeaders("*")
                 .exposedHeaders("Authorization,Link,X-Total-Count, Access-Control-Allow-Origin")
-                .allowCredentials(true).maxAge(1800);
+                .allowCredentials(false).maxAge(1800);
     }
 
     @Override
